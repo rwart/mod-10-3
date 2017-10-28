@@ -1,1 +1,35 @@
-//
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#carosel {
+  margin: calc( (100vh - 209px) / 2) auto;
+  border: 3px solid black;
+  width: 314px;
+  height: 209px;
+  overflow: hidden;
+}
+
+#carosel ul {
+  margin: 0;
+  padding: 0;
+  width: calc(314px * 5);
+  height: 209px;
+}
+
+#carosel li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 314px;
+  height: 209px;
+  display: inline-block;
+}
+
+#carosel img {
+  margin: 0;
+  padding: 0;
+  width: 314px;
+  height: 209px;
+}
