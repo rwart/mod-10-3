@@ -2,7 +2,7 @@ module.exports = function (grunt) {
   // Project configuration.
   grunt.initConfig({
     jshint: {
-      all: ['js/*.js', 'Gruntfile.js']
+      all: ['js/*.js', 'Gruntfile.js'],
     },
     watch: {
       scripts: {
@@ -10,24 +10,24 @@ module.exports = function (grunt) {
           tasks: ['jshint'],
           options: {
               spawn: false,
-          },
-      },
+            },
+        },
     },
     browserSync: { //
         dev: {
             bsFiles: {
-                src : [
+                src: [
                     'css/*.css',
                     '*.html',
-                    'js/*.js'
-                ]
-            },
+                    'js/*.js',
+                  ],
+              },
             options: {
                 watchTask: true,
-                server: true // baseDir: "./" port - Default: 3000
-            }
-        }
-    },
+                server: true, // baseDir: "./" port - Default: 3000
+              },
+          },
+      },
 
   });
 
