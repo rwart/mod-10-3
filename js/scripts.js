@@ -8,9 +8,9 @@ $(function () {
   }
 
   function moveFirstSlide() {
-    var firstItem = $caroselList.find('li:first');
-    var lastItem  = $caroselList.find('li:last');
-    lastItem.after(firstItem);
+    var $firstItem = $caroselList.find('li:first');
+    var $lastItem  = $caroselList.find('li:last');
+    $lastItem.after($firstItem);
     $caroselList.css({ marginLeft: 0 });
   }
 
